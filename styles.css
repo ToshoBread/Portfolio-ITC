@@ -1,0 +1,97 @@
+* {
+  margin: auto;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: no-repeat center center;
+  background-image: url(img/background.png);
+  background-size: cover;
+  z-index: -1;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+}
+
+.header {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.subhead {
+  position: relative;
+  display: flex;
+  width: 25%;
+  margin-top: 1rem;
+}
+
+.title {
+  color: white;
+}
+
+.vertical-line {
+  display: inline-block;
+  border-left: 3px solid #cccccc38;
+  border-radius: 6rem;
+  height: 1.5rem;
+}
+
+.menu {
+  background: rgba(128, 128, 128, 0.167);
+  height: 30rem;
+  width: 50rem;
+  margin-top: 2rem;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  column-gap: 5rem;
+  row-gap: 0.2rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper > button > i {
+  font-size: 5rem;
+}
+
+.wrapper > p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  width: 15%;
+  margin-top: 2rem;
+}
+
+.fa {
+  color: white;
+  font-size: 2rem;
+}
