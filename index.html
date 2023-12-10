@@ -11,6 +11,7 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <!-- Main Screen -->
     <div class="background"></div>
     <h1 class="header">Hi, I'm Zion</h1>
     <div class="subhead">
@@ -73,7 +74,7 @@
         onclick="close_overlay(aboutOverlay)"
         >&times;</a
       >
-      <div class="content aboutContent">
+      <div class="aboutContent">
         <img src="img/Dionisio.jpg" alt="FormalPicture" />
         <p><b>Name:</b></p>
         <p>Zion Nathan Dionisio</p>
@@ -112,8 +113,17 @@
         onclick="close_overlay(projectOverlay)"
         >&times;</a
       >
-      <div class="content projectContent">
-        <p>Project Hello World</p>
+      <div class="projectContent">
+        <h1>Web Development</h1>
+        <img src="img/loginpage.png" alt="Login Page" />
+        <img src="/img/thezone.png" alt="The Zone" />
+        <span class="divider"></span>
+        <h1>Game Development</h1>
+        <img src="img/gamemenu.png" alt="Game Menu" />
+        <img src="img/game.png" alt="Game" />
+        <span class="divider"></span>
+        <h1>Video Editing</h1>
+        <img src="img/videditing.png" alt="Video Editing" />
       </div>
     </div>
 
@@ -125,10 +135,51 @@
         onclick="close_overlay(contactOverlay)"
         >&times;</a
       >
-      <div class="content contactContent">
-        <p>Contact Hello World</p>
+      <div class="contactContent">
+        <h1>Get in Touch Through:</h1>
+        <span class="divider"></span>
+        <li>Contact Number:</li>
+        <p>0926 733 0808</p>
+        <span class="divider"></span>
+        <li>Email</li>
+        <p>zion.dionisio@neu.edu.ph</p>
+        <span class="divider"></span>
+        <div class="socials">
+          <a
+            href="https://web.facebook.com/ZND.18/"
+            target="_blank"
+            title="Facebook"
+            aria-hidden="true"
+          >
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a
+            href="https://github.com/ToshoBread"
+            target="_blank"
+            title="Github"
+            aria-hidden="true"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/z.nathan.18/"
+            target="_blank"
+            title="Instagram"
+            aria-hidden="true"
+          >
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script>
+    function open_overlay(overlay) {
+      overlay.style.height = "100%";
+    }
+
+    function close_overlay(overlay) {
+      overlay.style.height = "0%";
+    }
+  </script>
 </html>
