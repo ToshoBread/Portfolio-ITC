@@ -95,3 +95,40 @@ button {
   color: white;
   font-size: 2rem;
 }
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.closebtn {
+  margin: 1rem;
+  text-decoration: none;
+  font-size: 5rem;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  text-shadow: 1px 1px 10px white, 5px 5px 20px white;
+}
+
+.content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay p {
+  color: white;
+}

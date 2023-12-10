@@ -22,30 +22,87 @@
     </div>
     <div class="menu">
       <div class="wrapper">
-        <button class="about" onclick="openAbout()">
+        <button class="about" onclick="open_overlay(aboutOverlay)">
           <i class="fa fa-user"></i>
           <p>About Me</p>
         </button>
-        <button class="project" onclick="openProject()">
+        <button class="project" onclick="open_overlay(projectOverlay)">
           <i class="fa fa-code"></i>
           <p>My Projects</p>
         </button>
-        <button class="contact" onclick="openContact()">
+        <button class="contact" onclick="open_overlay(contactOverlay)">
           <i class="fa fa-send"></i>
           <p>Contact Me</p>
         </button>
       </div>
     </div>
+
+    <!-- Social Links -->
     <div class="socials">
-      <a href="#" title="Facebook" aria-hidden="true">
+      <a
+        href="https://web.facebook.com/ZND.18/"
+        target="_blank"
+        title="Facebook"
+        aria-hidden="true"
+      >
         <i class="fa fa-facebook"></i>
       </a>
-      <a href="#" title="Github" aria-hidden="true">
+      <a
+        href="https://github.com/ToshoBread"
+        target="_blank"
+        title="Github"
+        aria-hidden="true"
+      >
         <i class="fa fa-github"></i>
       </a>
-      <a href="#" title="Instagram" aria-hidden="true">
+      <a
+        href="https://www.instagram.com/z.nathan.18/"
+        target="_blank"
+        title="Instagram"
+        aria-hidden="true"
+      >
         <i class="fa fa-instagram"></i>
       </a>
     </div>
+
+    <!-- About Overlay -->
+    <div id="aboutOverlay" class="overlay">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="close_overlay(aboutOverlay)"
+        >&times;</a
+      >
+      <div class="about content">
+        <p>About Hello World</p>
+      </div>
+    </div>
+
+    <!-- Project Overlay -->
+    <div id="projectOverlay" class="overlay">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="close_overlay(projectOverlay)"
+        >&times;</a
+      >
+      <div class="project content">
+        <p>Project Hello World</p>
+      </div>
+    </div>
+
+    <!-- Contact Overlay -->
+    <div id="contactOverlay" class="overlay">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="close_overlay(contactOverlay)"
+        >&times;</a
+      >
+      <div class="contact content">
+        <p>Contact Hello World</p>
+      </div>
+    </div>
   </body>
+  <script src="script.js"></script>
 </html>
