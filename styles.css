@@ -123,10 +123,13 @@ button {
 
 .content {
   position: relative;
-  top: 25%;
+  top: 5%;
   width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  content: center;
+}
+
+.about > img {
+  scale: 50%;
 }
 
 .overlay p {
